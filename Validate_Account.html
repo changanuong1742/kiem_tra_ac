@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+
+
+
+
+
+<script>
+
+
+
+    function kiem_tra_acc(srt) {
+
+        pattern = /^[_a-z0-9]{6,}$/;
+        if (pattern.test(srt)) {
+           document.getElementById("show").innerHTML = 'ok';
+        }
+        else
+            document.getElementById("show").innerHTML = 'Nhập Lại';
+
+    }
+
+
+</script>
+
+<input id="nhap">
+<button onclick="kiem_tra_acc(document.getElementById('nhap').value)">Kiểm Tra</button>
+<p id="show"></p>
+</body>
+</html>
